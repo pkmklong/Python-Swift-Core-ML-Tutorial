@@ -10,8 +10,8 @@ import CoreML
 
 
 struct ContentView: View {
-    @State private var rm_in = 3
-    @State private var age_in = 10
+    @State private var rm_in = 6
+    @State private var age_in = 70
     
     @State private var alertTitle = ""
     @State private var alertMessage = ""
@@ -23,7 +23,7 @@ struct ContentView: View {
                 Text("House Requirements")
                     .font(.title)
                 
-                Stepper(value: $rm_in, in: 1...8, step: 1) {
+                Stepper(value: $rm_in, in: 1...9, step: 1) {
                     Text("Rooms: \(rm_in)")
                         .frame(alignment: .center)
                         .padding(.leading, 40)
