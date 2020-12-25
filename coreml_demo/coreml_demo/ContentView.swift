@@ -12,6 +12,7 @@ import CoreML
 struct ContentView: View {
     @State private var rm_in = 6
     @State private var age_in = 70
+    @State private var ptratio_in = 18
     
     @State private var alertTitle = ""
     @State private var alertMessage = ""
@@ -34,10 +35,15 @@ struct ContentView: View {
                         .frame(alignment: .center)
                         .padding(.leading, 40)
                 }
+                Stepper(value: $ptratio_in, in: 12...22, step: 1) {
+                    Text("Pupil-teacher ratio: \(ptratio_in)")
+                        .frame(alignment: .center)
+                        .padding(.leading, 40)
+                }
                 .navigationBarTitle("House Price Predictor")
                 .navigationBarItems(trailing:
                     Button(action: calculatePrice) {
-                        Text("Calculate Price")
+                        Text("Predict Price")
                     }
                 )
                 .alert(isPresented: $showingAlert) {
@@ -52,8 +58,8 @@ struct ContentView: View {
         let model = bhousing()
         do { let prediction = try
             model.prediction(RM: Double(rm_in),
-                             AGE: Double(age_in))
-            
+                             AGE: Double(age_in),
+                             PTRATIO: Double(ptratio_in))
             
             alertMessage = String(prediction.PRICE)
             alertTitle = "The price is…"

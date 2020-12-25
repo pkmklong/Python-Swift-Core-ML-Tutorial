@@ -13,7 +13,7 @@
 		22208A9B25952BF10048A8C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22208A9A25952BF10048A8C5 /* Preview Assets.xcassets */; };
 		22208AA625952BF20048A8C5 /* coreml_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22208AA525952BF20048A8C5 /* coreml_demoTests.swift */; };
 		22208AB125952BF20048A8C5 /* coreml_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22208AB025952BF20048A8C5 /* coreml_demoUITests.swift */; };
-		22208B19259560E90048A8C5 /* bhousing.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 22208B18259560E90048A8C5 /* bhousing.mlmodel */; };
+		22208B21259587510048A8C5 /* bhousing.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 22208B20259587510048A8C5 /* bhousing.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		22208AAC25952BF20048A8C5 /* coreml_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreml_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22208AB025952BF20048A8C5 /* coreml_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreml_demoUITests.swift; sourceTree = "<group>"; };
 		22208AB225952BF20048A8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22208B18259560E90048A8C5 /* bhousing.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bhousing.mlmodel; sourceTree = "<group>"; };
+		22208B20259587510048A8C5 /* bhousing.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bhousing.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				22208A9325952BEE0048A8C5 /* coreml_demoApp.swift */,
-				22208B18259560E90048A8C5 /* bhousing.mlmodel */,
+				22208B20259587510048A8C5 /* bhousing.mlmodel */,
 				22208A9525952BEE0048A8C5 /* ContentView.swift */,
 				22208A9725952BF10048A8C5 /* Assets.xcassets */,
 				22208A9C25952BF10048A8C5 /* Info.plist */,
@@ -264,7 +264,7 @@
 			files = (
 				22208A9625952BEE0048A8C5 /* ContentView.swift in Sources */,
 				22208A9425952BEE0048A8C5 /* coreml_demoApp.swift in Sources */,
-				22208B19259560E90048A8C5 /* bhousing.mlmodel in Sources */,
+				22208B21259587510048A8C5 /* bhousing.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
