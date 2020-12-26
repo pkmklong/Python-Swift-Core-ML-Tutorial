@@ -1,7 +1,7 @@
 # IOS_CoreML
 IOS machine learning demo using python, CoreML and SwiftUI
 
-![](https://github.com/pkmklong/IOS_CoreML/blob/main/media/app_demo.gif)
+![](https://github.com/pkmklong/IOS_CoreML/blob/main/app_demo.gif)
 
 <img src="https://github.com/pkmklong/IOS_CoreML/blob/main/media/coreml_demo.">
 
