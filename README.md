@@ -1,4 +1,4 @@
-<b>Deploy a Python Machine Learning Model on iOS in 5 Steps</b
+<b>Deploy a Python Machine Learning Model on iOS in 5 Steps</b>
 <i>A minimalist guide</i>
 
 
