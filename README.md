@@ -16,10 +16,9 @@ scikit-learn==0.19.2 \
 coremltools==4.0
 ```
 
-And install Xcode. -This guide uses Xcode Version 12.3 (12C33) on macOS Catalina 10.15.5.
+And install Xcode. <i>-This guide uses Xcode Version 12.3 (12C33) on macOS Catalina 10.15.5.</i>
 
-[Xcode includes everything developers need to create great applications for Mac, iPhone, iPad, Apple TV, and Apple…
-apps.apple.comTrain a model](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+[Xcode Install](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 <b>STEP 2.</b> Train a model
 <br>We’ll use sklearn’s Boston Housing Price toy dataset to train a linear regression model. For simplicity, we’ll limit the feature space to 3 predictors.
