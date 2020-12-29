@@ -1,5 +1,5 @@
 <b>Deploy a Python Machine Learning Model on iOS in 5 Steps</b>
-<i>A minimalist guide</i>
+<br><i>A minimalist guide</i>
 
 
 Our goal here is the shortest path from training a python model to a proof of concept iOS app you can deploy on an iPhone. We’ll create the basic scaffolding and leave plenty of room for further customization such as model selection and validation, code testing and a more polished UI.
