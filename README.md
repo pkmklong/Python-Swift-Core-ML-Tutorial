@@ -71,11 +71,11 @@ model.save('bhousing.mlmodel')
 ```
 <b>STEP 4.</b> Start a new Xcode project
 <br>And that’s it for python. From hereon, we can complete a basic app using Xcode and Swift. This can be done with the setup below.
-<br><i>Create a new Xcode project and choose “App.”</i>
+<br><br><i>Create a new Xcode project and choose “App.”</i>
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_1.png)
-<i>Name your project and select the “SwiftUI” Interface.</i>
+<br><br><i>Name your project and select the “SwiftUI” Interface.</i>
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_2.png)
-<i>Drag and drop the <b>.mlmodel</b> file saved above into your Xcode directory. This automatically generates a Swift class for your model as shown in the editor below.</i>
+<br><br><i>Drag and drop the <b>.mlmodel</b> file saved above into your Xcode directory. This automatically generates a Swift class for your model as shown in the editor below.</i>
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_3.png)
 
 <b>STEP 5.</b> Build a model UI
