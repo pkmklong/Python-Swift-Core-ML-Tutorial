@@ -73,15 +73,15 @@ model.save('bhousing.mlmodel')
 ```
 <b>STEP 4.</b> Start a new Xcode project
 <br>And that’s it for python. From hereon, we can complete a basic app using Xcode and Swift. This can be done with the setup below.
-<br>Create a new Xcode project and choose “App.”
+<br><i>Create a new Xcode project and choose “App.”</i>
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_1.png)
-Name your project and select the “SwiftUI” Interface.
+<i>Name your project and select the “SwiftUI” Interface.</i>
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_2.png)
-Drag and drop the .mlmodel file saved above into your Xcode directory. This automatically generates a Swift class for your model as shown in the editor below.
+<i>Drag and drop the <b>.mlmodel</b> file saved above into your Xcode directory. This automatically generates a Swift class for your model as shown in the editor below.</i>
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_3.png)
 
 <b>STEP 5.</b> Build a model UI
-<br>Next we’ll build a basic UI by modifying the ContentView.swift file. The code below sets up a UI to input house attributes and generate a price prediction. The key elements here include stepper structs that enable user input (lines 19–30) and a call to our trained model to predict house price. Steppers are basically widgets that modify the state of our house attribute variables (lines 6–8). A button on the navigation bar (line 31–40) calls our model from within the predictPrice function (line 46). This produces an alert message with the predicted price.
+<br>Next we’ll build a basic UI by modifying the <b>ContentView.swift</b> file. The code below sets up a UI to input house attributes and generate a price prediction. The key elements here include [stepper structs](https://developer.apple.com/documentation/swiftui/stepper) that enable user input (lines 19–30) and a call to our trained model to predict house price. Steppers are basically widgets that modify the [state](https://developer.apple.com/documentation/swiftui/state) of our house attribute variables (lines 6–8). A [button](https://www.simpleswiftguide.com/how-to-add-button-to-navigation-bar-in-swiftui/) on the navigation bar (line 31–40) calls our model from within the predictPrice function (line 46). This produces an [alert message](https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-an-alert) with the predicted price.
 ```swift
 import SwiftUI
 import CoreML
