@@ -154,7 +154,7 @@ struct ContentView_Previews: PreviewProvider {
 ```
 <br>Build and run a simulation in Xcode to see your app in action.
 
-![](https://github.com/pkmklong/IOS_CoreML/blob/main/app_demo.gif, height="400")
+![](https://github.com/pkmklong/IOS_CoreML/blob/main/app_demo.gif)
 
 <br>Thanks for reading!
 <br>
