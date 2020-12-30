@@ -2,7 +2,7 @@
 <br><i>A minimalist guide</i>
 
 
-Our goal here is the shortest path from training a python model to a proof of concept iOS app you can deploy on an iPhone. We’ll create the basic scaffolding and leave plenty of room for further customization such as model selection and validation, code testing and a more polished UI.
+Our goal here is the shortest path from training a python model to a proof of concept iOS app you can deploy on an iPhone. We’ll create the basic scaffolding and leave plenty of room for further customization such as model validation and a more polished UI.
 
 <b>STEP 1.</b> Set up your environment
 <br>From the terminal run:
@@ -79,7 +79,7 @@ model.save('bhousing.mlmodel')
 ![](https://github.com/pkmklong/IOS_CoreML/blob/main/start_xcode_3.png)
 
 <b>STEP 5.</b> Build a model UI
-<br>Next we’ll build a basic UI by modifying the <b>ContentView.swift</b> file. The code below sets up a UI to input house attributes and generate a price prediction. The key elements here include [stepper structs](https://developer.apple.com/documentation/swiftui/stepper) that enable user input (<i>lines 19–30</i>) and a call to our trained model to predict house price. Steppers are basically widgets that modify the [state](https://developer.apple.com/documentation/swiftui/state) of our house attribute variables (<i>lines 6–8</i>). A [button](https://www.simpleswiftguide.com/how-to-add-button-to-navigation-bar-in-swiftui/) on the navigation bar (<i>line 31–40</i>) calls our model from within the predictPrice function (<i>line 46</i>). This produces an [alert message](https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-an-alert) with the predicted price.
+<br>Next we’ll build a basic UI by modifying the <b>ContentView.swift</b> file. The code below sets up a UI to input house attributes and generate a price prediction. The key elements here include [stepper structs](https://developer.apple.com/documentation/swiftui/stepper) that enable user input (<i>lines 19–30</i>) and a call to our trained model to predict house price. Steppers are basically widgets that modify the [state](https://developer.apple.com/documentation/swiftui/state) of our house attribute variables (<i>lines 6–8</i>). A [button](https://www.simpleswiftguide.com/how-to-add-button-to-navigation-bar-in-swiftui/) on the navigation bar (<i>lines 31–40</i>) calls our model from within the predictPrice function (<i>line 46</i>). This produces an [alert message](https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-an-alert) with the predicted price.
 ```swift
 import SwiftUI
 import CoreML
