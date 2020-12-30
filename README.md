@@ -19,7 +19,7 @@ coremltools==4.0
 And [install Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) <i>-This guide uses Xcode Version 12.3 (12C33) on macOS Catalina 10.15.5.</i>
 
 <b>STEP 2.</b> Train a model
-<br>We’ll use sklearn’s Boston Housing Price toy dataset to train a linear regression model. For simplicity, we’ll limit the feature space to 3 predictors.
+<br>We’ll use sklearn’s Boston Housing Price [toy dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html) to train a linear regression model. For simplicity, we’ll limit the feature space to 3 predictors.
 ```python
 import pandas as pd
 from sklearn.linear_model import LinearRegression
@@ -39,7 +39,7 @@ lm = LinearRegression()
 lm.fit(X, y)
 ```
 <b>STEP 3.</b> Convert the model to Core ML
-<br>Next, we’ll use the coremltools package to convert our python model to the Core ML format (.mlmodel) for use in Xcode.
+<br>Next, we’ll use the [coremltools](https://coremltools.readme.io/docs) package to convert our python model to the Core ML format (.mlmodel) for use in Xcode.
 ```python
 # Convert sklearn model to CoreML
 import coremltools as cml
